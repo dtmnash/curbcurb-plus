@@ -1,0 +1,9 @@
+[
+  { "name": "Omaha", "slug": "omaha" },
+  { "name": "Lincoln", "slug": "lincoln" },
+  { "name": "Gretna", "slug": "gretna" },
+  { "name": "Elkhorn", "slug": "elkhorn" },
+  { "name": "Papillion", "slug": "papillion" },
+  { "name": "Bennington", "slug": "bennington" },
+  { "name": "Bellevue", "slug": "bellevue" }
+]
