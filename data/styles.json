@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Milled Slate",
+    "slug": "milled-slate",
+    "description": "A modern, chiseled texture that mimics natural stone slabs.",
+    "heroImage": "https://images.unsplash.com/photo-1511527661048-7fe73d85e9a4?q=80&w=1920&auto=format&fit=crop",
+    "features": [
+      "Hand-finished edges",
+      "High-contrast antiquing",
+      "Best-seller"
+    ],
+    "mowerEdgeCompatible": true
+  },
+  {
+    "name": "Natural Stone",
+    "slug": "natural-stone",
+    "description": "Our most versatile look, blending seamlessly with any landscape.",
+    "heroImage": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?q=80&w=1920&auto=format&fit=crop",
+    "features": [
+      "Subtle earthy tones",
+      "Deep-relief texture",
+      "Timeless appeal"
+    ],
+    "mowerEdgeCompatible": true
+  },
+  {
+    "name": "Moroccan",
+    "slug": "moroccan",
+    "description": "An exotic, intricate pattern for a high-end Mediterranean feel.",
+    "heroImage": "https://images.unsplash.com/photo-1541680670548-21fb9d115e57?q=80&w=1920&auto=format&fit=crop",
+    "features": [
+      "Unique geometric texture",
+      "Elegant curb profile",
+      "Statement piece"
+    ],
+    "mowerEdgeCompatible": true
+  },
+  {
+    "name": "Brick",
+    "slug": "brick",
+    "description": "The classic look of individual bricks without the shifting or weeds.",
+    "heroImage": "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1920&auto=format&fit=crop",
+    "features": [
+      "Traditional aesthetic",
+      "Multiple color-lock options",
+      "Perfect for colonial homes"
+    ],
+    "mowerEdgeCompatible": true
+  },
+  {
+    "name": "Wood Grain",
+    "slug": "wood-grain",
+    "description": "A rustic, driftwood-inspired texture for a natural, organic look.",
+    "heroImage": "https://images.unsplash.com/photo-1510255531911-c91ab540fba1?q=80&w=1920&auto=format&fit=crop",
+    "features": [
+      "Hyper-realistic grain",
+      "Warm color palettes",
+      "Unique in the Omaha market"
+    ],
+    "mowerEdgeCompatible": true
+  }
+]
