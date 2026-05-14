@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://curbcurb.net
+
+# Sitemaps
+Sitemap: https://curbcurb.net/sitemap.xml
