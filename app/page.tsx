@@ -1,10 +1,12 @@
 import Image from "next/image";
+import FaqSection from "./components/FaqSection";
 
 export default function Home() {
   return (
     <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
+      <main className="flex flex-1 w-full flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
+        <div className="max-w-3xl w-full mx-auto flex flex-col items-center sm:items-start">
+          <Image
           className="dark:invert"
           src="/next.svg"
           alt="Next.js logo"
@@ -58,6 +60,18 @@ export default function Home() {
           >
             Documentation
           </a>
+        </div>
+        </div>
+        <div className="w-full bg-gray-50 dark:bg-[#111111] py-16 mt-16">
+          <div className="max-w-3xl mx-auto px-4 text-center mb-8">
+            <h2 className="text-3xl font-semibold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
+              Frequently Asked Questions
+            </h2>
+            <p className="mt-4 text-lg text-gray-600 dark:text-gray-400">
+              Everything you need to know about our curbing services.
+            </p>
+          </div>
+          <FaqSection />
         </div>
       </main>
     </div>
