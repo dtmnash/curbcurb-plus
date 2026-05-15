@@ -16,7 +16,7 @@ export default function Navigation() {
         </nav>
         <div className="hidden md:block">
           <Link
-            href="/contact"
+            href="/estimate"
             className="bg-primary text-white px-5 py-2 rounded-xl font-medium hover:bg-primary/90 transition-colors shadow-sm"
           >
             Get a Free Estimate
