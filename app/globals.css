@@ -3,8 +3,9 @@
 :root {
   --background: #ffffff;
   --foreground: #1A1A1A;
-  --primary: #F05A28;
-  --secondary: #1A1A1A;
+  --primary: #50a900;
+  --secondary: #abb8c3;
+  --accent: #ff6900;
 }
 
 @theme inline {
@@ -12,6 +13,7 @@
   --color-foreground: var(--foreground);
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-heading: var(--font-lexend), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
