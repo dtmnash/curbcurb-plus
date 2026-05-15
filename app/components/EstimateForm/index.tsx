@@ -130,7 +130,7 @@ export default function EstimateForm() {
             setIsSuccess(false);
             setCurrentStep(1);
           }}
-          className="bg-[#F05A28] hover:bg-[#d94a1d] text-white font-medium py-3 px-8 rounded-xl transition-colors font-inter"
+          className="bg-primary hover:bg-primary/90 text-white font-medium py-3 px-8 rounded-xl transition-colors font-inter"
         >
           Submit Another Request
         </button>
@@ -161,7 +161,7 @@ export default function EstimateForm() {
               key={idx}
               className={`flex-1 rounded-full transition-all duration-300 ${
                 idx < currentStep
-                  ? "bg-[#F05A28]"
+                  ? "bg-primary"
                   : "bg-gray-200"
               }`}
             />
@@ -180,7 +180,7 @@ export default function EstimateForm() {
               <input
                 {...register("name")}
                 id="name"
-                className={`w-full px-4 py-3 rounded-xl border ${errors.name ? 'border-red-500 focus:ring-red-500' : 'border-gray-300 focus:ring-[#F05A28] focus:border-[#F05A28]'} shadow-sm outline-none transition-all`}
+                className={`w-full px-4 py-3 rounded-xl border ${errors.name ? 'border-red-500 focus:ring-red-500' : 'border-gray-300 focus:ring-primary focus:border-primary'} shadow-sm outline-none transition-all`}
                 placeholder="John Doe"
               />
               {errors.name && (
@@ -196,7 +196,7 @@ export default function EstimateForm() {
                 {...register("email")}
                 id="email"
                 type="email"
-                className={`w-full px-4 py-3 rounded-xl border ${errors.email ? 'border-red-500 focus:ring-red-500' : 'border-gray-300 focus:ring-[#F05A28] focus:border-[#F05A28]'} shadow-sm outline-none transition-all`}
+                className={`w-full px-4 py-3 rounded-xl border ${errors.email ? 'border-red-500 focus:ring-red-500' : 'border-gray-300 focus:ring-primary focus:border-primary'} shadow-sm outline-none transition-all`}
                 placeholder="john@example.com"
               />
               {errors.email && (
@@ -212,7 +212,7 @@ export default function EstimateForm() {
                 {...register("phone")}
                 id="phone"
                 type="tel"
-                className={`w-full px-4 py-3 rounded-xl border ${errors.phone ? 'border-red-500 focus:ring-red-500' : 'border-gray-300 focus:ring-[#F05A28] focus:border-[#F05A28]'} shadow-sm outline-none transition-all`}
+                className={`w-full px-4 py-3 rounded-xl border ${errors.phone ? 'border-red-500 focus:ring-red-500' : 'border-gray-300 focus:ring-primary focus:border-primary'} shadow-sm outline-none transition-all`}
                 placeholder="(555) 123-4567"
               />
               {errors.phone && (
@@ -231,7 +231,7 @@ export default function EstimateForm() {
                 <label className={`
                   relative flex cursor-pointer rounded-xl border p-4 focus:outline-none transition-all
                   ${watch("serviceType") === "Curbing"
-                    ? "bg-orange-50 border-[#F05A28] ring-1 ring-[#F05A28]"
+                    ? "bg-green-50 border-primary ring-1 ring-primary"
                     : "border-gray-300 bg-white hover:bg-gray-50"}
                 `}>
                   <input
@@ -254,7 +254,7 @@ export default function EstimateForm() {
                 <label className={`
                   relative flex cursor-pointer rounded-xl border p-4 focus:outline-none transition-all
                   ${watch("serviceType") === "Sealing"
-                    ? "bg-orange-50 border-[#F05A28] ring-1 ring-[#F05A28]"
+                    ? "bg-green-50 border-primary ring-1 ring-primary"
                     : "border-gray-300 bg-white hover:bg-gray-50"}
                 `}>
                   <input
@@ -287,7 +287,7 @@ export default function EstimateForm() {
                 {...register("footage")}
                 id="footage"
                 defaultValue=""
-                className={`w-full px-4 py-3 rounded-xl border ${errors.footage ? 'border-red-500 focus:ring-red-500' : 'border-gray-300 focus:ring-[#F05A28] focus:border-[#F05A28]'} bg-white shadow-sm outline-none transition-all font-inter appearance-none`}
+                className={`w-full px-4 py-3 rounded-xl border ${errors.footage ? 'border-red-500 focus:ring-red-500' : 'border-gray-300 focus:ring-primary focus:border-primary'} bg-white shadow-sm outline-none transition-all font-inter appearance-none`}
               >
                 <option value="" disabled>Select an estimated range</option>
                 <option value="Under 50 ft">Under 50 ft</option>
@@ -312,7 +312,7 @@ export default function EstimateForm() {
                 {...register("preferredStyle")}
                 id="preferredStyle"
                 defaultValue=""
-                className={`w-full px-4 py-3 rounded-xl border ${errors.preferredStyle ? 'border-red-500 focus:ring-red-500' : 'border-gray-300 focus:ring-[#F05A28] focus:border-[#F05A28]'} bg-white shadow-sm outline-none transition-all font-inter appearance-none`}
+                className={`w-full px-4 py-3 rounded-xl border ${errors.preferredStyle ? 'border-red-500 focus:ring-red-500' : 'border-gray-300 focus:ring-primary focus:border-primary'} bg-white shadow-sm outline-none transition-all font-inter appearance-none`}
               >
                 <option value="" disabled>Select a style</option>
                 <option value="Milled Slate">Milled Slate</option>
@@ -338,7 +338,7 @@ export default function EstimateForm() {
                 type="button"
                 onClick={handleBack}
                 disabled={isSubmitting}
-                className="flex items-center justify-center px-6 py-3 border border-gray-300 shadow-sm text-base font-medium rounded-xl text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#F05A28] transition-colors disabled:opacity-50 flex-1"
+                className="flex items-center justify-center px-6 py-3 border border-gray-300 shadow-sm text-base font-medium rounded-xl text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary transition-colors disabled:opacity-50 flex-1"
               >
                 <ChevronLeft className="w-5 h-5 mr-1 -ml-1" />
                 Back
@@ -349,7 +349,7 @@ export default function EstimateForm() {
               <button
                 type="button"
                 onClick={handleNext}
-                className="flex items-center justify-center px-6 py-3 border border-transparent shadow-sm text-base font-medium rounded-xl text-white bg-[#F05A28] hover:bg-[#d94a1d] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#F05A28] transition-colors flex-[2]"
+                className="flex items-center justify-center px-6 py-3 border border-transparent shadow-sm text-base font-medium rounded-xl text-white bg-primary hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary transition-colors flex-[2]"
               >
                 Next
                 <ChevronRight className="w-5 h-5 ml-1 -mr-1" />
@@ -360,7 +360,7 @@ export default function EstimateForm() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="flex items-center justify-center px-6 py-3 border border-transparent shadow-sm text-base font-medium rounded-xl text-white bg-[#F05A28] hover:bg-[#d94a1d] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#F05A28] transition-colors disabled:opacity-70 flex-[2]"
+                className="flex items-center justify-center px-6 py-3 border border-transparent shadow-sm text-base font-medium rounded-xl text-white bg-primary hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary transition-colors disabled:opacity-70 flex-[2]"
               >
                 {isSubmitting ? (
                   <>

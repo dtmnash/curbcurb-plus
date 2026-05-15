@@ -10,7 +10,7 @@ export default function ServiceAreas() {
   return (
     <div className="container mx-auto px-4 py-12 md:py-24">
       <div className="max-w-4xl mx-auto text-center">
-        <h1 className="text-4xl md:text-5xl font-bold mb-6 text-[#1A1A1A] font-lexend">
+        <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground font-lexend">
           Our Service Areas
         </h1>
         <p className="text-lg md:text-xl text-gray-600 mb-8 font-inter">
@@ -21,9 +21,9 @@ export default function ServiceAreas() {
             <Link
               key={location.slug}
               href={`/service-areas/${location.slug}`}
-              className="bg-white rounded-xl shadow-md p-6 border border-gray-100 hover:border-[#F05A28] hover:shadow-lg transition-all"
+              className="bg-white rounded-xl shadow-md p-6 border border-gray-100 hover:border-primary hover:shadow-lg transition-all"
             >
-              <h2 className="text-xl font-bold text-[#1A1A1A] font-lexend">
+              <h2 className="text-xl font-bold text-foreground font-lexend">
                 {location.name}
               </h2>
             </Link>

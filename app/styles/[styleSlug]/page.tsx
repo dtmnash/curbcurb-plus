@@ -52,7 +52,7 @@ export default async function StylePage({
       </section>
 
       {/* Why Choose This Style Section */}
-      <section className="py-16 md:py-24 bg-secondary text-white">
+      <section className="py-16 md:py-24 bg-secondary text-foreground">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
             Why Choose This Style
@@ -63,7 +63,7 @@ export default async function StylePage({
                 key={index}
                 className="bg-white/5 p-6 rounded-xl border border-white/10 flex flex-col items-center text-center"
               >
-                <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mb-4">
+                <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center mb-4">
                   {/* Checkmark icon placeholder */}
                   <svg
                     className="w-6 h-6 text-white"
